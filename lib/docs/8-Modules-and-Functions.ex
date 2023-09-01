@@ -22,3 +22,15 @@ defmodule DefaultTest do
     x
   end
 end
+
+defmodule Concat do
+  def join(a, b \\ nil, sep \\ " ")
+
+  def join(a, b, _seq) when is_nil(b) do
+    a
+  end
+
+  def join(a, b, sep) do
+    a <> sep <> b
+  end
+end
