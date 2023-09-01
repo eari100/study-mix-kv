@@ -16,3 +16,9 @@ defmodule Concat do
     a <> sep <> b
   end
 end
+
+defmodule DefaultTest do
+  def dowork(x \\ "hello") do
+    x
+  end
+end
