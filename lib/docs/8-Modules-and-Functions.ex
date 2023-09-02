@@ -11,6 +11,25 @@ defmodule Math do
   def zero?(x) when is_integer(x), do: false
 end
 
+# Function Capturing
+
+#fun = &Math.zero?/1
+#is_function(fun) # true
+#fun.(0) # true
+#&is_function/1
+#(&is_function/1).(fun) # true
+#
+#add = &+/2
+#add.(1, 2)
+#
+#fun = &(&1 + 1)
+#fun.(1) # 2
+#
+#fun2 = &"Good #{&1}"
+#fun2.("morning")
+
+
+
 #defmodule Concat do
 #  def join(a, b, sep \\ " ") do
 #    a <> sep <> b
