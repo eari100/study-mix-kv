@@ -28,3 +28,12 @@ defmodule Math do
     []
   end
 end
+
+defmodule Math do
+  def sum_list(list) do
+    Enum.reduce(list, 0, fn(x, acc) -> x + acc end)
+  end
+  def double_each(list) do
+    Enum.map(list, fn(x) -> x * 2 end)
+  end
+end
