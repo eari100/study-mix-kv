@@ -17,3 +17,10 @@ defmodule Study_Enumerables do
     Enum.reduce(1..3, &+/2)
   end
 end
+
+defmodule Eager_vs_Lazy do
+  def filter(range) do
+    odd? = &(rem(&1, 2) != 0)
+    Enum.filter(range, odd?)
+  end
+end
